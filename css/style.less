@@ -58,23 +58,27 @@ nav,.rate,.cart{
 }
 nav{
 	margin-left: 16.43%;
+	width:39.6%;
+	box-sizing: border-box;
 }
 .top-menu{
 	border-left:1px solid #eeeeee;
+	//box-sizing: border-box;
+	//height:60px;
 }
 .top-menu li{
-	padding:22px;
+	padding:4.4% 3%;
 	border-right: 1px solid #eeeeee;
 	a{
 		color:@color;
 		font-family: 'Aller';
-		font-size: 16px;	
+		font-size: 1em;	
 	}
 }
 .rate{
 	border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
-	margin-left:8.58%;//108px;
+	margin-left:14.2%;//108px;
 }
 .rate img{
 	padding:20px 44px 20px 20px;
@@ -89,3 +93,53 @@ nav{
 .top img{
 	width:100%;
 }
+.specials{
+	background: @color;
+	ul{
+		background:#2e2e2e url(../img/menu_top_line.png) no-repeat 50% 5px;
+		background-size: 68.6%; 
+		margin-bottom:1.8%;
+		li{
+			text-align: center;
+			padding:1.8% 2.6%;
+			margin-right:8px;
+			margin-top:7px;
+		}
+	}
+}
+//тут надо бы разобраться
+.specials li:nth-child(2){
+	//margin-right:20px;
+	//margin-left:5px;
+	padding:1.8% 3.1%;
+}
+.specials li:first-child{
+	padding:1.8% 3%;
+	margin-left: 210px;
+	margin-right: 6px;
+}
+.specials li:nth-child(3){
+	padding:1.8% 2.5%;
+	margin-right: 6px;
+}
+.specials a{
+	color:#787878;
+	font-family: 'Aller';
+	font-size:0.75em;
+	h3{
+		display: block;
+		color:#acacac;
+		font-size:1.125em;
+	}
+}
+.specials-bottom{
+	text-align: center;
+	padding-bottom:1.43%;
+	a{
+		margin:0.72%;
+		img{
+			width:21.4%;
+		}
+	}
+}
+/*MAIN*/
