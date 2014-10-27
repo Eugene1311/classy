@@ -1,5 +1,5 @@
 $(function () {
 	$('.search img').click(function() {
-		$('#search').animate({width: "+=250px"});
+		$('#search').show().animate({width: "+=250px"});
 	});
 });
