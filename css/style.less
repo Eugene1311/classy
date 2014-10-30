@@ -60,36 +60,37 @@ nav,.rate,.cart{
 }
 nav{
 	margin-left: 16.43%;
-	width:39.6%;
+	width:53.8%;//39.6%;
 }
 .top-menu{
 	border-left:1px solid #eeeeee;
 }
 .top-menu li{
-	padding:4.4% 3.2%;
+	padding:3% 2.5%;//4.4% 3.2%;
 	border-right: 1px solid #eeeeee;
+	height:60px;
 	a{
 		color:@color;
 		font-family: 'Aller';
-		font-size: 1em;	
+		font-size: 1em;
 	}
 }
 .rate{
 	border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
-	margin-left:14.2%;//108px;
+	//margin-left:14.2%;//108px;
 	width:6.4%;
 	box-sizing: border-box;//префиксы?
 }
 .rate img{
-	padding:20px 44px 20px 20px;
+	padding:20px 44px 20px 20px;//22% 40% 22% 22%;
 }
 .cart {
 	border-right: 1px solid #cccccc;
 	width:6.35%;
-	box-sizing: border-box;
+	//box-sizing: border-box;
 	img{
-		padding:21px 44px 21px 18px;
+		padding:21px 44px 21px 18px;//21% 40% 21% 21%;
 	}
 }
 /*CONTENT*/
@@ -105,6 +106,7 @@ nav{
 		text-align:center;
 		li{
 			text-align: center;
+			vertical-align: top;
 			margin-right:0.4%;
 			margin-top:6px;
 			width:12.86%;
@@ -256,11 +258,38 @@ nav{
 .text-widget{
 	margin-left:19%;
 }
+.widgets form{
+	margin:5% 0 0 19%;
+	width:18%;
+	height:36px;
+	.submit{
+		background: url(../img/send_btn_img.png) no-repeat;
+		background-size: 100%;
+		border:none;
+		width:15%;
+		height:100%;
+	}
+}
+.email{
+		float:left;
+		background: #2e2e2e;
+		color:#979797;
+		border:none;
+		width:75%;
+		height:100%;
+		padding-left: 5%;
+		font-family: 'Aller';
+		font-style: italic;
+		font-size:0.75em;
+}
+.row{
+	display: inline-block;
+}
 /*social*/
 .share{
-	width:20%;
+	width:16%;
 	background: url(../img/social_icons.png) no-repeat;
-	margin-left: 50%;
+	margin:0 0 3% 28%;
 	a{
 		display:inline-block;
 		height:36px;
@@ -280,7 +309,7 @@ footer{
 		margin-left: @margin;
 		font-family: 'Aller';
 		font-size:0.9em;
-		margin:2% 23.5% 2% @margin;
+		margin:2% 25% 2% @margin;
 		width:15%;
 		display: inline-block;
 	}
