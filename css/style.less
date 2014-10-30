@@ -131,8 +131,18 @@ nav{
 		margin:0.72%;
 		img{
 			width:21.4%;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s;
 		}
 	}
+}
+.specials-bottom img:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
 }
 /*MAIN*/
 .main{
@@ -143,18 +153,34 @@ nav{
 	margin:0 auto;
 }
 .title{
-	width: 200px;
+	width: 50%;
 	float:left;
+	margin:3.7% 0;
+	font-family: 'Aller';
+	font-size: 1.4em;
 }
 .button{
 	float:right;
+	font-family: 'Aller';
+	font-size:0.9em;
+	border:solid #bcb5a7 1px;
+	margin:3.4% 0;
+	padding:0.8% 2%;
+	color:#bcb5a7;
 }
 .product{
 	clear:both;
 	img{
+		float:left;
 		width:32%;
-		margin-right: 1%;
+		margin-right: 1.33%;//фиг знает что
 	}
+}
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+	margin-bottom: 4.8%;
 }
 .main-bottom{
 	border-bottom:1px solid #bcb5a7;
@@ -204,6 +230,67 @@ nav{
 		p{
 			font-size:0.75em;
 			line-height: 1em;
+		}
+	}
+}
+.widgets{
+	background:@color;
+	color:#979797;
+}
+.widget{
+	display: inline-block;
+	vertical-align: top;
+	margin-top:2.5%;
+	margin-right:3.5%;
+	width:18%;
+	h2{
+		font-family: 'Aller';
+		font-size:1em;
+		margin-bottom: 5%;
+	}
+	p{
+		font-style: italic;
+		font-size:0.9em;
+	}
+}
+.text-widget{
+	margin-left:19%;
+}
+/*social*/
+.share{
+	width:20%;
+	background: url(../img/social_icons.png) no-repeat;
+	margin-left: 50%;
+	a{
+		display:inline-block;
+		height:36px;
+		width:14%;
+		margin-right:1%;
+	}
+}
+//.facebook{//надо разобраться
+//	background-position: 0 0;
+//}
+/*FOOTER*/
+footer{
+	background:#2e2e2e;
+	color:#acacac;
+	padding-top:1px;
+	p{
+		margin-left: @margin;
+		font-family: 'Aller';
+		font-size:0.9em;
+		margin:2% 23.5% 2% @margin;
+		width:15%;
+		display: inline-block;
+	}
+	ul{
+		display: inline-block;
+		margin-top:2.5%;
+		vertical-align: top;
+		li{
+			font-family: 'Aller';
+			font-size:0.9em;
 		}
 	}
 }
