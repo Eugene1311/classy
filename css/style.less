@@ -28,11 +28,12 @@ header{
 	float:right;
 	margin-right:16.43%;
 	.login{
-		margin-left:35px;
+		margin-left:5px;
 		padding: 10px 15px 4px;
 		border-right: 1px solid #383838;
 		border-left: 1px solid #383838;
 		height: 30px;
+		display: inline-block;
 	}
 	a{
 		font-family: 'Aller';
@@ -40,9 +41,13 @@ header{
 	}
 }
 .search{
-	float:left;
-	margin-top:13px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top:3px;
 	input{
+		padding: 0;
+		border:none;
+		width: 0;
 		display:none;
 	}
 }
@@ -78,7 +83,6 @@ nav{
 .rate{
 	border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
-	//margin-left:14.2%;//108px;
 	width:6.4%;
 	box-sizing: border-box;//префиксы?
 }
@@ -88,6 +92,7 @@ nav{
 .cart {
 	border-right: 1px solid #cccccc;
 	width:6.35%;
+	//margin-right: @margin;
 	//box-sizing: border-box;
 	img{
 		padding:21px 44px 21px 18px;//21% 40% 21% 21%;
@@ -149,13 +154,14 @@ nav{
 /*MAIN*/
 .main{
 	background: #ebe7df;
+	padding-bottom: 3%;
 }
 .main-content{
 	width:67%;
 	margin:0 auto;
 }
 .title{
-	width: 50%;
+	width: 70%;
 	float:left;
 	margin:3.7% 0;
 	font-family: 'Aller';
@@ -196,10 +202,10 @@ nav{
 	height:120px;
 	overflow:hidden;
 	background: #dfdbd4;
-	display: inline-block;
+	float:left;
 	vertical-align: top;
 	padding:1.6%;
-	margin:2.6% 2.3% 2.6% 0;
+	margin:2.6% 2.8% 2.6% 0;
 	font-family: 'Aller';
 	h2{
 		font-size:1em;
@@ -212,7 +218,6 @@ nav{
 }
 .blog-news{
 	background: #dfdbd4;
-	display: inline-block;
 	padding:1.6%;//15px;
 	margin-top:2.6%;
 	width:38.8%;
@@ -227,7 +232,6 @@ nav{
 		background: url(../img/blog-date.png) no-repeat 0 5px;
 		padding-left:45px;
 		padding-bottom: 5px;
-		line-height:0.7em;
 		margin:2% 0 4% 0;
 		line-height: 1.5em;
 		h3{
