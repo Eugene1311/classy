@@ -6,7 +6,7 @@ body{
 }
 @font-face {
     font-family: 'Aller';
-    src: url(../fonts/Aller_Rg.ttf),url(../fonts/Aller_Rg.eot);
+    src: url(../fonts/Aller_Rg.eot),url(../fonts/Aller_Rg.ttf);
    }
 a{
 	text-decoration: none;
@@ -29,8 +29,8 @@ header{
 	margin-right:16.43%;
 	.login{
 		margin-left:5px;
-		padding: 10px 15px 4px;
-		border-right: 1px solid #383838;
+		padding: 10px 15px 5px;
+		border-right: 1px solid white;
 		border-left: 1px solid #383838;
 		height: 30px;
 		display: inline-block;
@@ -69,34 +69,50 @@ nav{
 }
 .top-menu{
 	border-left:1px solid #eeeeee;
+	height:60px;
+	display: -ms-flexbox;
+	display:flex;
 }
 .top-menu li{
-	padding:3% 2.5%;//4.4% 3.2%;
+	padding:22px 2.7%;//5.5% 2.5%;
 	border-right: 1px solid #eeeeee;
-	height:60px;
 	a{
 		color:@color;
 		font-family: 'Aller';
-		font-size: 1em;
+		font-size:100%;// 1em;
 	}
 }
 .rate{
 	border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
-	width:6.4%;
-	box-sizing: border-box;//префиксы?
+	width:6.25%;
+	text-align: center;
 }
 .rate img{
-	padding:20px 44px 20px 20px;//22% 40% 22% 22%;
+	//padding:20px 44px 20px 20px;//22% 40% 22% 22%;
+	//width:20%;
+	margin:19px 2px 0 0;
 }
 .cart {
 	border-right: 1px solid #cccccc;
 	width:6.35%;
-	//margin-right: @margin;
+	text-align: center;
 	//box-sizing: border-box;
 	img{
-		padding:21px 44px 21px 18px;//21% 40% 21% 21%;
+		margin:22px 2px 0 0;
 	}
+}
+.icon{
+		display:inline-block;
+		vertical-align: top;
+		background:url(../img/counter_bg.png) no-repeat;
+		background-size:100%;
+		width:20px;
+		height:20px;
+		text-align:center;
+		padding-top:1.5px;
+		margin:19px 1% 0 0;
+		color:white;
 }
 /*CONTENT*/
 .top img{
@@ -113,7 +129,7 @@ nav{
 			text-align: center;
 			vertical-align: top;
 			margin-right:0.4%;
-			margin-top:7px;
+			margin-top:6px;
 			width:12.86%;
 			padding:25px 0;
 		}
@@ -121,6 +137,16 @@ nav{
 }
 .specials li:first-child{
 	margin-left: .4%;
+}
+.specials li:hover{
+	background: url(../img/menu_top_greenline.png) no-repeat top center;
+	background-size:100%;
+	a{
+		color:#adadad;
+	}
+	h3{
+		color:#fff;
+	}
 }
 .specials a{
 	color:#787878;
@@ -176,23 +202,68 @@ nav{
 	padding:0.8% 2%;
 	color:#bcb5a7;
 }
-.product{
+.product-line{
 	clear:both;
 	width:100%;
 	margin-bottom: 5%;
-	img{
-		float:left;
-		width:32%;
-		margin-right: 2%;//фиг знает что
-	}
-}
-.product img:last-child{
-	margin-right: 0;
 }
 .clearfix:after{
     content:'';
     display:table;
     clear:both;
+}
+.product{
+	float:left;
+	position: relative;
+	width:32%;
+	margin-right: 1.8%;
+	vertical-align: top;
+	>img{
+		width:100%;	
+	}
+}
+.last{
+	margin-right: 0;
+}
+.price{
+	position: absolute;
+	top:74.5%;
+	left:4%;
+	width:23.5%;
+	z-index: 10;
+	img{
+		width:100%;
+	}
+}
+.description{
+	position:relative;
+	background:#fff;
+	width:100%;
+	top:99.5%;
+	box-sizing: border-box;
+	p{
+		margin-left:30%;
+		font-family: 'Aller';
+		font-size:110%;
+		padding:4.8% 0;
+	}
+	figure{
+		padding:5% 0;
+		padding-left:40%;
+		cursor:pointer;
+		display:none;
+		img{
+			width:9%;
+			margin-right: 12%;
+			vertical-align: middle;
+		}
+	}
+}
+.description:hover p{
+	display:none;
+}
+.description:hover figure{
+	display:block;
 }
 .main-bottom{
 	border-bottom:1px solid #bcb5a7;
@@ -323,6 +394,7 @@ footer{
 		margin-left: @margin;
 		font-family: 'Aller';
 		font-size:0.8em;
+		line-height: 1.3em;
 		margin:2% 0 2% @margin;
 		width:25%;
 		float:left;
