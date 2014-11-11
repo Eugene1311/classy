@@ -2,10 +2,10 @@ $(function () {
 	$('.search img').toggle(function() {
 		$('#search')
 			.show()
-			.animate({width: "+=200px"}, 1000)
+			.animate({width: "+=200px"}, 700)
 		},function () {
 		$('#search')
-			.animate({width: "-=200px"},1000)
+			.animate({width: "-=200px"},700)
 	});	
 //	$('.specials li').hover(function () {
 //		$(this).find('a').css('color', '#adadad');//делегирование?
