@@ -28,9 +28,9 @@ header{
 	float:right;
 	margin-right:16.43%;
 	.login{
-		margin-left:5px;
+		margin-left:15px;
 		padding: 10px 15px 5px;
-		border-right: 1px solid white;
+		border-right: 1px solid #383838;
 		border-left: 1px solid #383838;
 		height: 30px;
 		display: inline-block;
@@ -50,22 +50,27 @@ header{
 		width: 0;
 		display:none;
 	}
+	img{
+		cursor: pointer;
+	}
 }
 .logo{
-	margin:0.75% 0 0.75% 16.43%;
+	margin:12px 0 0 16.43%;
+	vertical-align: middle;
 	width:13.5%;
+	float:left;
 	img{
 		width:100%;
 	}
 }
 nav,.rate,.cart{
-	display: inline-block;
-	vertical-align: top;
+	//vertical-align: top;
 	height:60px;
 }
 nav{
 	margin-left: 16.43%;
-	width:53.8%;//39.6%;
+	width:39.6%;
+	float:left;
 }
 .top-menu{
 	border-left:1px solid #eeeeee;
@@ -74,18 +79,27 @@ nav{
 	display:flex;
 }
 .top-menu li{
-	padding:22px 2.7%;//5.5% 2.5%;
+	padding:22px 3.85%;//5.5% 2.5%;
 	border-right: 1px solid #eeeeee;
+	//text-align: center;
+	//box-sizing: border-box;
 	a{
 		color:@color;
 		font-family: 'Aller';
-		font-size:100%;// 1em;
+		font-size:1em;
 	}
 }
+.right{
+	float:right;
+	margin-right:@margin;
+	height:60px;
+	width:12%;
+}
 .rate{
+	float:left;
 	border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
-	width:6.25%;
+	width:48%;
 	text-align: center;
 }
 .rate img{
@@ -95,7 +109,7 @@ nav{
 }
 .cart {
 	border-right: 1px solid #cccccc;
-	width:6.35%;
+	//width:45%;
 	text-align: center;
 	//box-sizing: border-box;
 	img{
@@ -109,9 +123,8 @@ nav{
 		background-size:100%;
 		width:20px;
 		height:20px;
-		text-align:center;
-		padding-top:1.5px;
-		margin:19px 1% 0 0;
+		padding-top:2px;
+		margin:18px 1% 0 0;
 		color:white;
 }
 /*CONTENT*/
@@ -161,9 +174,9 @@ nav{
 	text-align: center;
 	padding-bottom:1.43%;
 	a{
-		margin:0.72%;
+		margin:0.45%;
 		img{
-			width:21.4%;
+			width:21.5%;//21.4%;
 			-webkit-transition: all .5s;
 			-moz-transition: all .5s;
 			-o-transition: all .5s;
@@ -275,12 +288,12 @@ nav{
 .text{
 	width:23%;
 	height:120px;
-	overflow:hidden;
+	overflow:auto;
 	background: #dfdbd4;
 	float:left;
-	vertical-align: top;
+	//vertical-align: top;
 	padding:1.6%;
-	margin:2.6% 2.8% 2.6% 0;
+	margin:2.6% 2.6% 2.6% 0;
 	font-family: 'Aller';
 	h2{
 		font-size:1em;
@@ -292,12 +305,13 @@ nav{
 	}
 }
 .blog-news{
+	float:right;
 	background: #dfdbd4;
-	padding:1.6%;//15px;
+	padding:1.6%;
 	margin-top:2.6%;
 	width:38.8%;
 	height:120px;
-	overflow:hidden;
+	overflow:auto;//чудеса какие-то творит
 	font-family: 'Aller';
 	h2{
 		font-size:1em;
@@ -307,14 +321,15 @@ nav{
 		background: url(../img/blog-date.png) no-repeat 0 5px;
 		padding-left:45px;
 		padding-bottom: 5px;
-		margin:2% 0 4% 0;
-		line-height: 1.5em;
+		margin:2% 0 1.4% 0;
 		h3{
 			font-size:0.85em;
+			line-height:1em;
+			padding-top:5px;
 		}
 		p{
 			font-size:0.75em;
-			line-height: 1em;
+			line-height: 1.5em;
 		}
 	}
 }
@@ -352,19 +367,9 @@ nav{
 	form{
 	float:left;
 	margin:3% 0 0 19%;
-	width:18%;
+	width:25%;
 	//height:50%;
-	.submit{
-		background: url(../img/send_btn_img.png) no-repeat;
-		background-size: 100%;
-		border:none;
-		width:13%;
-		//height:36px;
-		cursor:pointer;
-		padding: 8%;
-		//float:right;
 	}
-}
 }
 .email{
 		float:left;
@@ -372,12 +377,22 @@ nav{
 		color:#979797;
 		border:2px solid #2e2e2e;
 		width:80%;
-		//height:36px;
+		height:36px;
 		box-sizing: border-box;
 		padding: 4.2%;
 		font-family: 'Aller';
 		font-style: italic;
 		font-size:75%;
+}
+.submit{
+	background: url(../img/send_btn_img.png) no-repeat;
+	background-size: 100%;
+	border:none;
+	width:36px;//13%;
+	height:36px;
+	cursor:pointer;
+	padding: 8%;
+	float:right;
 }
 .share{
 	float:right;
@@ -408,7 +423,7 @@ footer{
 	ul{
 		float:right;
 		margin-top:2.5%;
-		margin-right:16%;
+		margin-right:16.43%;
 		vertical-align: top;
 		li{
 			font-family: 'Aller';
