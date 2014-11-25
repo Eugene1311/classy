@@ -63,7 +63,7 @@ $(function () {
 	});
 	$('a[rel=product]').colorbox({
 		width : '40%',
-		height: '75%',
+		height: '50%',
 		opacity:0.3,
 		current: "photo {current} of {total}"
 	});
