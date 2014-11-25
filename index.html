@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet/less" href="css/style.less"/>
+		<link rel="stylesheet" href="js/colorbox/colorbox.css">
 		<script src="js/less-1.7.3.min.js"></script>
 		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/colorbox/jquery.colorbox-min.js"></script>
 		<script src="js/script.js"></script>
 		<title>Интернет-магазин</title>
 	</head>
@@ -29,8 +31,8 @@
 			<div class="header-bottom clearfix">			
 				<nav>
 					<ul class="top-menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Products</a></li>
+						<li><a href="index.html" class="active">Home</a></li>
+						<li><a href="products.html">Products</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="#">Pages</a></li>
 						<li><a href="#">Blog</a></li>
@@ -49,60 +51,72 @@
 				</div>
 			</div>
 			<div class="top">
-				<img src="img/top_picture.png" alt="" />
-			</div>
-		</header>
-		<div class="content">
-			<div class="specials">
-				<ul>
-					<li><a href="#"><h3>Pink Shoes</h3>Now af $145,99</a></li>
-					<li><a href="#"><h3>Anna Field</h3>Limited Edition</a></li>
-					<li><a href="#"><h3>Prada</h3>Summer is coming</a></li>
-					<li><a href="#"><h3>Casadei</h3>All colors aviable</a></li>
-					<li><a href="#"><h3>Mellow Yellow</h3>Free delivery</a></li>
-				</ul>
-				<div class="specials-bottom">
-					<a href="#"><img src="img/on_sale_img.png" alt=""></a>
-					<a href="#"><img src="img/special_off_img.png" alt=""></a>
-					<a href="#"><img src="img/must_have_img.png" alt=""></a>
+				<img src="img/top_img.jpg" alt="" />
+				<div class="action-menu">
+					<a href="img/item3.png" class="cboxElement" rel="product" title="Pink Shoes"><img src="img/eye_with_bg.jpg" alt=""></a>
+					<a><img src="img/star_with_bg.jpg" alt=""></a>
+					<a><img src="img/share_with_bg.jpg" alt=""></a>
+					<a><img src="img/cart_with_bg.jpg" alt=""></a>
 				</div>
 			</div>
-			<div class="main clearfix">
-				<div class="main-content">
-					<section class="main-top">
-						<h2 class="title">New arrivals on FooseShoes</h2>
-						<a class="button" href="#">Show All</a>
-						<div class="product-line clearfix">
-							<div class="product">
-								<img src="img/item1.png" alt="">
-								<div class="price">
-									<img src="img/price_img.png" alt="">
-								</div>
-								<div class="description">
-									<p>Even & Odd</p>
-									<figure>
-										<a><img src="img/eye_icon.png" alt=""></a>
-										<a><img src="img/star_icon.png" alt=""></a>
-										<a><img src="img/share_icon.png" alt=""></a>
-										<a><img src="img/cart_green_icon.png" alt=""></a>
-									</figure>
-								</div>
+		</header>
+		<div class="specials">
+			<ul>
+				<li><a href="#"><h3>Pink Shoes</h3>Now af $145,99</a></li>
+				<li><a href="#"><h3>Anna Field</h3>Limited Edition</a></li>
+				<li><a href="#"><h3>Prada</h3>Summer is coming</a></li>
+				<li><a href="#"><h3>Casadei</h3>All colors aviable</a></li>
+				<li><a href="#"><h3>Mellow Yellow</h3>Free delivery</a></li>
+			</ul>
+			<div class="specials-bottom">
+				<a href="#">
+						<img src="img/on_sale_img.png" alt="">
+				</a>
+				<a href="#">
+						<img src="img/special_off_img.png" alt="">
+				</a>
+				<a href="#">
+						<img src="img/must_have_img.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="main clearfix">
+			<div class="main-content home">
+				<div class="headline">
+					<h2 class="title">New arrivals on FooseShoes</h2>
+					<a class="button" href="products.html">Show All</a>
+				</div>
+					<div class="product-line">
+						<div class="product">
+							<img src="img/item1.png" alt="">
+							<div class="price">
+								<img src="img/price_img.png" alt="">
 							</div>
-							<div class="product">
-								<img src="img/item2.png" alt="">
-								<div class="price">
-									<img src="img/price_img.png" alt="">
-								</div>
-								<div class="description">
-									<p>Even & Odd</p>
-									<figure>
-										<a><img src="img/eye_icon.png" alt=""></a>
-										<a><img src="img/star_icon.png" alt=""></a>
-										<a><img src="img/share_icon.png" alt=""></a>
-										<a><img src="img/cart_green_icon.png" alt=""></a>
-									</figure>
-								</div>
+							<div class="description">
+								<p>Even & Odd</p>
+								<figure>
+									<a href="img/item1.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+									<a><img src="img/star_with_bg.jpg" alt=""></a>
+									<a><img src="img/share_with_bg.jpg" alt=""></a>
+									<a><img src="img/cart_with_bg.jpg" alt=""></a>
+								</figure>
 							</div>
+						</div>
+						<div class="product">
+							<img src="img/item2.png" alt="">
+							<div class="price">
+								<img src="img/price_img.png" alt="">
+							</div>
+							<div class="description">
+								<p>Even & Odd</p>
+								<figure>
+									<a href="img/item2.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+									<a><img src="img/star_with_bg.jpg" alt=""></a>
+									<a><img src="img/share_with_bg.jpg" alt=""></a>
+									<a><img src="img/cart_with_bg.jpg" alt=""></a>
+								</figure>
+							</div>
+						</div>
 							<div class="product last">
 								<img src="img/item3.png" alt="">
 								<div class="price">
@@ -111,19 +125,19 @@
 								<div class="description">
 									<p>Buffalo Decollete</p>
 									<figure>
-										<a><img src="img/eye_icon.png" alt=""></a>
-										<a><img src="img/star_icon.png" alt=""></a>
-										<a><img src="img/share_icon.png" alt=""></a>
-										<a><img src="img/cart_green_icon.png" alt=""></a>
+										<a href="img/item3.png" class="cboxElement" rel="product" title="Buffalo Decollete"><img src="img/eye_with_bg.jpg" alt=""></a>
+										<a><img src="img/star_with_bg.jpg" alt=""></a>
+										<a><img src="img/share_with_bg.jpg" alt=""></a>
+										<a><img src="img/cart_with_bg.jpg" alt=""></a>
 									</figure>
 								</div>
 							</div>
 						</div>
-					</section>
-					<section class="main-bottom">
+					<div class="headline">
 						<h2 class="title">Best sellers of the mounth</h2>
-						<a class="button" href="#">Show All</a>
-						<div class="product-line  clearfix">
+						<a class="button" href="products.html">Show All</a>
+					</div>
+						<div class="product-line clearfix">
 							<div class="product">
 								<img src="img/item4.png" alt="">
 								<div class="price">
@@ -132,10 +146,10 @@
 								<div class="description">
 									<p>Even & Odd</p>
 									<figure>
-										<a><img src="img/eye_icon.png" alt=""></a>
-										<a><img src="img/star_icon.png" alt=""></a>
-										<a><img src="img/share_icon.png" alt=""></a>
-										<a><img src="img/cart_green_icon.png" alt=""></a>
+										<a href="img/item4.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+										<a><img src="img/star_with_bg.jpg" alt=""></a>
+										<a><img src="img/share_with_bg.jpg" alt=""></a>
+										<a><img src="img/cart_with_bg.jpg" alt=""></a>
 									</figure>
 								</div>
 							</div>
@@ -147,10 +161,10 @@
 								<div class="description">
 									<p>Even & Odd</p>
 									<figure>
-										<a><img src="img/eye_icon.png" alt=""></a>
-										<a><img src="img/star_icon.png" alt=""></a>
-										<a><img src="img/share_icon.png" alt=""></a>
-										<a><img src="img/cart_green_icon.png" alt=""></a>
+										<a href="img/item5.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+										<a><img src="img/star_with_bg.jpg" alt=""></a>
+										<a><img src="img/share_with_bg.jpg" alt=""></a>
+										<a><img src="img/cart_with_bg.jpg" alt=""></a>
 									</figure>
 								</div>
 							</div>
@@ -162,15 +176,16 @@
 								<div class="description">
 									<p>Buffalo Decollete</p>
 									<figure>
-										<a><img src="img/eye_icon.png" alt=""></a>
-										<a><img src="img/star_icon.png" alt=""></a>
-										<a><img src="img/share_icon.png" alt=""></a>
-										<a><img src="img/cart_green_icon.png" alt=""></a>
+										<a href="img/item6.png" class="cboxElement" rel="product" title="Buffalo Decollete"><img src="img/eye_with_bg.jpg" alt=""></a>
+										<a><img src="img/star_with_bg.jpg" alt=""></a>
+										<a><img src="img/share_with_bg.jpg" alt=""></a>
+										<a><img src="img/cart_with_bg.jpg" alt=""></a>
 									</figure>
 								</div>
 							</div>
 						</div>
-					</section>
+					</div><!--end main-content-->
+					<div class="addon">
 					<section class="text">
 						<h2>Free Shipping</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
@@ -190,9 +205,8 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 						</section>
 					</article>
-				</div><!--end main-content-->
-			</div><!--end main-->
-		</div>
+				</div>
+		</div><!--end main-->
 		<div class="widgets">
 			<div class="text-widget widget">
 				<h2>Text widget</h2>
@@ -221,9 +235,9 @@
 			</div>
 		</div>
 		<footer class="clearfix">
-			<p>&copy;Copyright Fooseshooes 2013.<br>Designed by EnzoliVolti</p>
+			<p>&copy; Copyright Fooseshooes 2013.<br>Designed by EnzoliVolti</p>
 			<ul>
-				<li><a href="#">Home/</a></li>
+				<li><a href="index.html">Home/</a></li>
 				<li><a href="#">Support/</a></li>
 				<li><a href="#">Terms and Conditions/</a></li>
 				<li><a href="#">Faqs/</a></li>
