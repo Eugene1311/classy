@@ -386,12 +386,13 @@ nav{
 .price{
 	position: absolute;
 	//top:74.5%;
-	bottom:-3px;
+	bottom:0;
 	left:4%;
 	width:23.5%;
 	z-index: 10;
 	img{
 		width:100%;
+		vertical-align:bottom;
 	}
 }
 .description{
@@ -475,7 +476,7 @@ nav{
 .widgets{
 	background:@color;
 	color:#979797;
-	padding-bottom:3%;
+	//padding-bottom:3%;
 	border-bottom: 1px solid #1c1c1c;
 }
 .widget{
@@ -536,6 +537,7 @@ nav{
 	background: url(../img/social_icons.png) no-repeat;
 	background-size: 100%;
 	margin:3% 19.3% 3% 0%;
+	min-height:70px;
 	a{
 		display:inline-block;
 		height:36px;
