@@ -7,6 +7,12 @@ $(function () {
 		$('#search')
 			.animate({width: "-=190px"},700)
 	});	
+	$('.description,.action-menu').delegate('.icon-change','mouseover',function (){
+		$(this).find('img').attr("src","img/cart_with_bg.jpg");	
+	});
+	$('.description,.action-menu').delegate('.icon-change','mouseleave',function (){
+		$(this).find('img').attr("src","img/cart.png");	
+	});
 //	$('.specials li').hover(function () {
 //		$(this).find('a').css('color', '#adadad');//делегирование?
 //		$(this).find('h3').css('color', '#fff');
@@ -62,8 +68,8 @@ $(function () {
 		$('.drop').slideUp();
 	});
 	$('a[rel=product]').colorbox({
-		width : '40%',
-		height: '50%',
+		width : '550',
+		height: '500',
 		opacity:0.3,
 		current: "photo {current} of {total}"
 	});
