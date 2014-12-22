@@ -1,12 +1,13 @@
 @color:#242424;
 @margin:16.43%;
 body{
-	font:100%/1.5em;
+	font-size:100%;
 	width:100%;
+	font-family: 'Aller';
 }
 @font-face {
     font-family: 'Aller';
-    src: url(../fonts/Aller_Rg.ttf),url(../fonts/Aller_Rg.eot);
+    src: url(../fonts/Aller_Rg.eot),url(../fonts/Aller_Rg.ttf);
    }
 a{
 	text-decoration: none;
@@ -18,7 +19,6 @@ li{
 /*HEADER*/
 header{
 	background: @color;
-	padding-top:1px;
 }
 .header-bottom{
 	clear:both;
@@ -28,11 +28,12 @@ header{
 	float:right;
 	margin-right:16.43%;
 	.login{
-		margin-left:35px;
-		padding: 10px 15px 4px;
+		margin-left:15px;
+		padding: 10px 15px 5px;
 		border-right: 1px solid #383838;
 		border-left: 1px solid #383838;
 		height: 30px;
+		display: inline-block;
 	}
 	a{
 		font-family: 'Aller';
@@ -40,69 +41,129 @@ header{
 	}
 }
 .search{
-	float:left;
-	margin-top:13px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top:3px;
 	input{
+		padding: 0;
+		border:none;
+		width: 0;
 		display:none;
+	}
+	img{
+		cursor: pointer;
 	}
 }
 .logo{
-	margin:0.75% 0 0.75% 16.43%;
+	margin:12px 0 0 16.43%;
+	vertical-align: middle;
 	width:13.5%;
+	float:left;
 	img{
 		width:100%;
 	}
 }
 nav,.rate,.cart{
-	display: inline-block;
-	vertical-align: top;
+	//vertical-align: top;
 	height:60px;
 }
 nav{
 	margin-left: 16.43%;
-	width:53.8%;//39.6%;
+	width:39.6%;
+	float:left;
 }
 .top-menu{
 	border-left:1px solid #eeeeee;
+	height:60px;
+	display: -ms-flexbox;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
 }
 .top-menu li{
-	padding:3% 2.5%;//4.4% 3.2%;
+	padding:22px 0;//3.85%;//5.5% 2.5%;
 	border-right: 1px solid #eeeeee;
-	height:60px;
+	-webkit-flex-basis: 18%;
+	-ms-flex-preferred-size: 16.7%;
+	flex-basis: 18%;
+	text-align: center;
 	a{
 		color:@color;
 		font-family: 'Aller';
-		font-size: 1em;
+		font-size:1em;
+	}
+	:hover{
+		color:#57c5a0;
+	}
+	.active{
+	color:#57c5a0;
 	}
 }
+.right{
+	float:right;
+	margin-right:@margin;
+	height:60px;
+	width:12%;
+}
 .rate{
+	float:left;
 	border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
-	//margin-left:14.2%;//108px;
-	width:6.4%;
-	box-sizing: border-box;//префиксы?
+	width:48%;
+	text-align: center;
 }
 .rate img{
-	padding:20px 44px 20px 20px;//22% 40% 22% 22%;
+	//padding:20px 44px 20px 20px;//22% 40% 22% 22%;
+	//width:20%;
+	margin:19px 2px 0 0;
 }
 .cart {
 	border-right: 1px solid #cccccc;
-	width:6.35%;
+	//width:45%;
+	text-align: center;
 	//box-sizing: border-box;
 	img{
-		padding:21px 44px 21px 18px;//21% 40% 21% 21%;
+		margin:22px 2px 0 0;
 	}
 }
-/*CONTENT*/
-.top img{
-	width:100%;
+.icon{
+		display:inline-block;
+		vertical-align: top;
+		background:url(../img/counter_bg.png) no-repeat;
+		background-size:100%;
+		width:20px;
+		height:20px;
+		padding-top:2px;
+		margin:18px 1% 0 0;
+		color:white;
 }
+.top {
+	position:relative;
+	img{
+		width:100%;
+		display:block;
+	}
+}
+.action-menu{
+	position:absolute;
+	top:70.5%;
+	left:52.85%;
+	width:14%;
+		img{
+			float:left;
+			width:22%;
+			cursor:pointer;
+			margin-right: 2px;
+		}
+}
+/*CONTENT*/
 .specials{
 	background: @color;
 	ul{
-		background:#2e2e2e url(../img/menu_top_line.png) no-repeat 50% 5px;
+		background:#2e2e2e url(../img/menu_top_line.png) no-repeat 50% 10px;
 		background-size: 68.6%; 
 		margin-bottom:1.8%;
+		padding-top:5px;
 		text-align:center;
 		li{
 			text-align: center;
@@ -117,6 +178,16 @@ nav{
 .specials li:first-child{
 	margin-left: .4%;
 }
+.specials li:hover{
+	background: url(../img/menu_top_greenline.png) no-repeat top center;
+	background-size:100%;
+	a{
+		color:#adadad;
+	}
+	h3{
+		color:#fff;
+	}
+}
 .specials a{
 	color:#787878;
 	font-family: 'Aller';
@@ -129,35 +200,128 @@ nav{
 .specials-bottom{
 	text-align: center;
 	padding-bottom:1.43%;
-	a{
-		margin:0.72%;
-		img{
-			width:21.4%;
-			-webkit-transition: all .5s;
-			-moz-transition: all .5s;
-			-o-transition: all .5s;
-			transition: all .5s;
-		}
-	}
+}
+.specials-bottom a{
+	margin:0.45%;
+}
+.specials-bottom img{
+	width:21.4%;
+	-moz-transition: all .5s ease-in;
+	-o-transition: all .5s ease-in;
+	-webkit-transition: all .5s ease-in;
+	-ms-transition: all .5s ease-in;transition: all .5s ease-in;
 }
 .specials-bottom img:hover{
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
 /*MAIN*/
 .main{
 	background: #ebe7df;
+	padding:1px 0 3% 0;
 }
 .main-content{
 	width:67%;
 	margin:0 auto;
+	border-bottom:1px solid #bcb5a7;
+	padding-bottom:1.4%;
 }
-.title{
-	width: 50%;
+.home{
+	padding-bottom:2.6%;
+}
+.addon{
+	width:67%;
+	margin:0 auto;
+}
+/*shop*/
+.shop{
+	background:#2e2e2e;
+	color:#fff;
+	h1{
+		float: left;
+		margin:30px 0 0 21%;
+		font-size:1.3em;
+	}
+	form{
+		float:right;
+		width:50%;
+		margin-right:@margin;
+	}
+}
+/*end shop*/
+.headline{
 	float:left;
-	margin:3.7% 0;
+	width:100%;
+	margin:3.4% 0 2.9%;
+}
+/*select*/
+.select{
+	float:left;
+	//color:#acacac;
+	font-family: 'Aller';
+	font-size: 1.1em;
+	width:31%;
+	height:60px;
+	margin:10px 3.5% 10px 0;
+	box-sizing: border-box;
+	padding:20px 0 20px 0;
+	text-align: center;
+	background:@color;
+}
+.slct{
+	background: url(../img/select2_img.png) 92% 50% no-repeat;
+	display:block;
+	background-color: @color;
+	//width: 285px;
+	padding: 4px 15px 4px 10px;
+	color: #fff;
+	
+	/*
+		Супер финт обрезаем текст
+		чтобы не вылезал за рамку
+	*/
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;	
+	
+}
+//.slct.active {
+//	border-radius: 5px 5px 0 0;
+//	border-bottom: none;
+//}
+.drop {
+	margin-top: 25px;
+	padding-top: 4px;
+	width: 15.5%;
+	height:100px;
+	border-top: none;
+	display: none;
+	position: absolute;
+	background:url(../img/dropdown_bg_min.png) no-repeat 50% 0;
+	z-index:20;
+}
+.drop li {
+	list-style: none;
+	cursor: pointer;
+	display: block;
+	color: #fff;
+	padding: 10px 15px 10px 15px;
+	background:@color;
+}
+.drop li:hover {
+	background-color: #57c5a0;
+	-webkit-transform:scaleX(1.01);
+	-ms-transform:scaleX(1.01);
+	transform:scaleX(1.01);
+}
+/*end select*/
+.title{
+	float:left;
+	margin:0.3% 3% 0 0;
 	font-family: 'Aller';
 	font-size: 1.4em;
 }
@@ -166,40 +330,110 @@ nav{
 	font-family: 'Aller';
 	font-size:0.9em;
 	border:solid #bcb5a7 1px;
-	margin:3.4% 0;
 	padding:0.8% 2%;
 	color:#bcb5a7;
 }
-.product{
-	clear:both;
-	width:100%;
-	margin-bottom: 5%;
+.page-path{
+	float:left;
+	margin-top:1.07%;
+	font-size:0.8em;
+	color:#acacac;
+	vertical-align: bottom;
+}
+.view{
+	float:right;
+	font-size:0.8em;
+	color:#acacac;
+	width:20%;
+	span{
+		margin:4.5% 5% 0 0;
+		float: left;
+	}
 	img{
-		float:left;
-		width:32%;
-		margin-right: 2%;//фиг знает что
+		width:100%;
 	}
 }
-.product img:last-child{
-	margin-right: 0;
+.image-border{
+	border:1px solid #acacac;
+	float:right;
+	width:10%;
+	margin-right:2%;
+	padding:2.6% 3% 1.5%;
+	cursor:pointer;
 }
+//.product-line{
+//	clear:both;
+//	width:100%;
+//	margin:1.3% 0;
+//}
 .clearfix:after{
     content:'';
     display:table;
     clear:both;
 }
-.main-bottom{
-	border-bottom:1px solid #bcb5a7;
+.product{
+	float:left;
+	position: relative;
+	width:32%;
+	margin:0 1.9% 11px 0;
+	>img{
+		width:100%;	
+	}
+}
+.last{
+	margin-right: 0;
+}
+.price{
+	position: absolute;
+	//top:74.5%;
+	bottom:0;
+	left:4%;
+	width:23.5%;
+	z-index: 10;
+	img{
+		width:100%;
+		vertical-align:bottom;
+	}
+}
+.description{
+	//position:relative;
+	background:#fff;
+	width:100%;
+	height:45px;
+	//top:99.5%;
+	p{
+		margin-left:30%;
+		font-family: 'Aller';
+		font-size:110%;
+		padding:14px 0;
+		box-sizing: border-box;
+		line-height: 0.85em;
+	}
+	figure{
+		width:100%;
+		padding:4px 0 0 35%;
+		display:none;
+		box-sizing: border-box;
+		img{
+			max-width:20%;
+			max-height: 40px;
+		}
+	}
+}
+.description:hover p{
+	display:none;
+}
+.description:hover figure{
+	display:block;
 }
 .text{
 	width:23%;
 	height:120px;
-	overflow:hidden;
+	overflow:auto;
 	background: #dfdbd4;
-	display: inline-block;
-	vertical-align: top;
+	float:left;
 	padding:1.6%;
-	margin:2.6% 2.3% 2.6% 0;
+	margin:2.6% 2.6% 2.6% 0;
 	font-family: 'Aller';
 	h2{
 		font-size:1em;
@@ -211,13 +445,13 @@ nav{
 	}
 }
 .blog-news{
+	float:right;
 	background: #dfdbd4;
-	display: inline-block;
-	padding:1.6%;//15px;
+	padding:1.6%;
 	margin-top:2.6%;
 	width:38.8%;
 	height:120px;
-	overflow:hidden;
+	overflow:auto;//чудеса какие-то творит
 	font-family: 'Aller';
 	h2{
 		font-size:1em;
@@ -227,15 +461,15 @@ nav{
 		background: url(../img/blog-date.png) no-repeat 0 5px;
 		padding-left:45px;
 		padding-bottom: 5px;
-		line-height:0.7em;
-		margin:2% 0 4% 0;
-		line-height: 1.5em;
+		margin:2% 0 1.4% 0;
 		h3{
 			font-size:0.85em;
+			line-height:1em;
+			padding-top:5px;
 		}
 		p{
 			font-size:0.75em;
-			line-height: 1em;
+			line-height: 1.5em;
 		}
 	}
 }
@@ -272,38 +506,39 @@ nav{
 	background:@color;
 	form{
 	float:left;
-	margin:3% 0 0 19%;
-	width:18%;
-	//height:50%;
-	.submit{
-		background: url(../img/send_btn_img.png) no-repeat;
-		background-size: 100%;
-		border:none;
-		width:36px;
-		height:36px;
-		cursor:pointer;
+	margin:3% 0 3% 19%;
+	width:25%;
 	}
-}
 }
 .email{
 		float:left;
 		background: #2e2e2e;
 		color:#979797;
 		border:2px solid #2e2e2e;
-		width:75%;
+		width:60%;
+		min-width:150px;
 		height:36px;
 		box-sizing: border-box;
-		padding-left: 3%;
+		padding-left: 4.2%;
 		font-family: 'Aller';
 		font-style: italic;
 		font-size:75%;
+}
+.submit{
+	background: url(../img/send_btn_img.png) no-repeat;
+	background-size: 100%;
+	border:none;
+	width:36px;//13%;
+	height:36px;
+	cursor:pointer;
 }
 .share{
 	float:right;
 	width:16%;
 	background: url(../img/social_icons.png) no-repeat;
 	background-size: 100%;
-	margin:3% 19.3% 3% 0%;
+	margin:3% 19.3% 3% 0;
+	min-height:78px;
 	a{
 		display:inline-block;
 		height:36px;
@@ -319,6 +554,7 @@ footer{
 		margin-left: @margin;
 		font-family: 'Aller';
 		font-size:0.8em;
+		line-height: 1.3em;
 		margin:2% 0 2% @margin;
 		width:25%;
 		float:left;
@@ -326,7 +562,7 @@ footer{
 	ul{
 		float:right;
 		margin-top:2.5%;
-		margin-right:16%;
+		margin-right:16.43%;
 		vertical-align: top;
 		li{
 			font-family: 'Aller';
