@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet/less" href="css/style.less"/>
+	<link rel="stylesheet" href="js/colorbox/colorbox.css">
+	<script src="js/less-1.7.3.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/colorbox/jquery.colorbox-min.js"></script>
+	<script src="js/script.js"></script>
+	<title>Интернет-магазин</title>
+</head>
+<body>
+	<header>
+			<div class="logo">
+				<a href="#"><img src="img/logo.png" alt="Логотип" border="0" /></a>
+			</div>
+			<div class="header-right">
+				<div class="search">
+					<form method="get" action="">
+						<input type="search" id="search">
+						<label for="search"><img src="img/search_icon.png" alt=""></label><!--нужен ли тут label?-->
+					</form>
+				</div>
+				<div class="login">
+					<a href="#">LOGIN or REGISTER</a>
+				</div>
+			</div>
+			<div class="header-bottom clearfix">			
+				<nav>
+					<ul class="top-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products.html" class="active">Products</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>	
+				</nav>
+				<div class="right">
+					<div class="rate">
+						<img src="img/star_icon.png" alt=""/>
+						<span class="icon">3</span>
+					</div>
+					<div class="cart">
+						<img src="img/cart_icon.png" alt="Корзина" />
+						<span class="icon">0</span>
+					</div>
+				</div>
+			</div>
+			<div class="top">
+				<img src="img/top_img.jpg" alt="" />
+			</div>
+	</header>
+	<section class="shop clearfix">
+		<h1>Shop by</h1>
+			<form action="">
+			<div class="select">
+				<a href="#" class="slct">Brands</a>
+				<ul class="drop">
+					<li>Buffalo Decollete</li>
+					<li>Even&Odd</li>
+					<li>Prada</li>
+					<li>Casadei</li>
+					<li>Mellow Yellow</li>
+				</ul>
+				<input type="hidden" id="select" />
+			</div>
+			<div class="select">
+				<a href="#" class="slct">Categories</a>
+				<ul class="drop">
+					<li>Shoes</li>
+					<li>Not shoes</li>
+				</ul>
+				<input type="hidden" id="select" />
+			</div>
+			<div class="select last">
+				<a href="#" class="slct">Price</a>
+				<ul class="drop">
+					<li>Sort another</li>
+					<li>Sort alphabetically</li>
+				</ul>
+				<input type="hidden" id="select" />
+			</div>
+		</form>
+	</section>
+	<div class="main clearfix">
+		<div class="main-content clearfix">
+			<div class="headline">
+				<h2 class="title">All Products</h2>
+				<div class="page-path">
+					<a href="index.html">Home </a>>
+					<span>All Products</span>
+				</div>
+				<form>
+<!--
+					<select>
+						<option>Sort alphabetically</option>
+					</select>
+-->
+<!--
+					<div class="select">
+						<a href="#" class="slct">Sort alphabetically</a>
+						<ul class="drop">
+							<li>Sort another</li>
+							<li>Sort alphabetically</li>
+						</ul>
+						<input type="hidden" id="select" />
+					</div>
+-->
+				</form>
+				<div class="view">
+					<span>View as</span>
+					<div class="image-border">
+						<img src="img/list_img.png" alt="">
+					</div>
+					<div class="image-border">
+						<img src="img/grid_img.png" alt="">
+					</div>
+				</div>
+			</div>
+				<div class="product">
+					<img src="img/item1.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Even & Odd</p>
+						<figure>
+							<a href="img/item1.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product">
+					<img src="img/item2.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Even & Odd</p>
+						<figure>
+							<a href="img/item2.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product last">
+					<img src="img/item3.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Buffalo Decollete</p>
+						<figure>
+							<a href="img/item3.png" class="cboxElement" rel="product" title="Buffalo Decollete"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product">
+					<img src="img/item4.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Even & Odd</p>
+						<figure>
+							<a href="img/item4.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product">
+					<img src="img/item5.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Even & Odd</p>
+						<figure>
+							<a href="img/item5.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product last">
+					<img src="img/item6.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Buffalo Decollete</p>
+						<figure>
+							<a href="img/item6.png" class="cboxElement" rel="product" title="Buffalo Decollete"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product">
+					<img src="img/item1.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Even & Odd</p>
+						<figure>
+							<a href="img/item1.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product">
+					<img src="img/item2.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Even & Odd</p>
+						<figure>
+							<a href="img/item2.png" class="cboxElement" rel="product" title="Even & Odd"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+				<div class="product last">
+					<img src="img/item3.png" alt="">
+					<div class="price">
+						<img src="img/price_img.png" alt="">
+					</div>
+					<div class="description">
+						<p>Buffalo Decollete</p>
+						<figure>
+							<a href="img/item3.png" class="cboxElement" rel="product" title="Buffalo Decollete"><img src="img/eye_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/star_with_bg.jpg" alt=""></a>
+							<a href=""><img src="img/share_with_bg.jpg" alt=""></a>
+							<a href="" class="icon-change"><img src="img/cart.png" alt=""></a>
+						</figure>
+					</div>
+				</div>
+		</div><!--end main-->
+		<div class="addon">
+			<section class="text">
+				<h2>Free Shipping</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+			</section>
+			<section class="text">
+				<h2>Testimonials</h2>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <br/><em>-Jon doe-</em></p>
+			</section>
+			<article class="blog-news">
+				<h2>Blog news</h2>
+				<section>
+					<h3>Nice & clean! The best for you blog!</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+				</section>
+				<section>
+					<h3>What an Ecommerce theme!</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+				</section>
+			</article>
+		</div>
+	</div><!--end main-content-->
+	<div class="widgets">
+		<div class="text-widget widget">
+			<h2>Text widget</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+		</div>
+		<div class="widget">
+			<h2>Twitter widget</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+		</div>
+		<div class="widget">
+			<h2>Flickr widget</h2>
+			<img src="img/flickr_widget_img.png" alt="">
+		</div>
+	<div class="pre-footer clearfix">
+		<form action="#" method="post">
+			<input class="email" type="email" placeholder="Enter e-mail for newsletters">
+			<input class="submit" type="submit" value="">
+		</form>
+		<div class="share">
+			<a class="facebook" href="#"></a>
+			<a class="twitter" href="#"></a>
+			<a class="google" href="#"></a>
+			<a class="linkedin" href="#"></a>
+			<a class="flickr" href="#"></a>
+		</div>
+	</div>
+	</div>
+	<footer class="clearfix">
+		<p>&copy; Copyright Fooseshooes 2013.<br>Designed by EnzoliVolti</p>
+		<ul>
+			<li><a href="index.html">Home/</a></li>
+			<li><a href="#">Support/</a></li>
+			<li><a href="#">Terms and Conditions/</a></li>
+			<li><a href="#">Faqs/</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+	</footer>	
+</body>
+</html>
